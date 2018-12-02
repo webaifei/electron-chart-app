@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Tabs, Upload} from "element-react";
+import PvUv from "./components/pvUv";
 import "./App.css";
 import 'element-theme-default';
 class App extends Component {
@@ -19,7 +20,9 @@ class App extends Component {
             <div className="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
           </Upload>
           </Tabs.Pane>
-          <Tabs.Pane label="PV-UV" name="2">PV-UV</Tabs.Pane>
+          <Tabs.Pane label="PV-UV" name="2">
+            <PvUv/>
+          </Tabs.Pane>
           <Tabs.Pane label="漏斗模型" name="3">漏斗模型</Tabs.Pane>
           <Tabs.Pane label="定时补偿任务" name="4">定时补偿任务</Tabs.Pane>
         </Tabs>
