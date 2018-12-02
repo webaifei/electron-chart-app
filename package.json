@@ -5,11 +5,20 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "electron-debug": "^2.0.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron-packager": "^12.1.0",
+    "electron": "^2.0.2",
+    "xo": "^0.21.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "electron .",
+    "package": "electron-packager . --out=dist --asar --overwrite --all",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
