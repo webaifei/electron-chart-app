@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {Tabs, Upload} from "element-react";
+import {Tabs} from "element-react";
 import PvUv from "./components/pvUv";
+import Upload from "./components/Upload";
 import "./App.css";
 import 'element-theme-default';
 class App extends Component {
@@ -9,16 +10,7 @@ class App extends Component {
       <div className="App">
         <Tabs type="border-card" activeName="1">
           <Tabs.Pane label="上传表格" name="1">
-          <Upload
-            className="upload-demo"
-            drag
-            action="//jsonplaceholder.typicode.com/posts/"
-            multiple
-            tip={<div className="el-upload__tip">上传CVS EXCEL格式</div>}
-          >
-            <i className="el-icon-upload"></i>
-            <div className="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
-          </Upload>
+            <Upload/>
           </Tabs.Pane>
           <Tabs.Pane label="PV-UV" name="2">
             <PvUv/>

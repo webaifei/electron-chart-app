@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import echarts from "echarts";
 import "./style.css";
-const containerRef = React.createRef();
 export default class PvUv extends Component{
 
   componentDidMount() {
