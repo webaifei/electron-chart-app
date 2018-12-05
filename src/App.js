@@ -18,8 +18,12 @@ class App extends Component {
           <Tabs.Pane label="PV-UV" name="1">
             <PvUv handledData={handledData}/>
           </Tabs.Pane>
-          <Tabs.Pane label="漏斗模型" name="2">漏斗模型</Tabs.Pane>
-          <Tabs.Pane label="更新数据" name="3">
+          <Tabs.Pane label="漏斗模型" name="2">
+            <p>1. 申卡页PV/UV - 下单 - 进件</p>
+            <p>2. UV - 会员注册 - 不同的会员占比</p>
+          </Tabs.Pane>
+          <Tabs.Pane label="事件埋点" name="3">aaa</Tabs.Pane>
+          <Tabs.Pane label="更新数据" name="4">
             <Upload/>
           </Tabs.Pane>
         </Tabs>
