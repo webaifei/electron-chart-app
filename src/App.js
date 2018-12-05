@@ -10,7 +10,7 @@ import 'element-theme-default';
 const data = require("./data/data.json");
 const handledData = utils.convertData(data);
 class App extends Component {
-
+    
   render() {
     return (
       <div className="App">

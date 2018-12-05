@@ -22,9 +22,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "serve": "electron .",
-    "preserve": "yarn run build",
+    "serve-local": "electron .",
+    "preserve-local": "yarn run build",
     "package": "electron-packager . --out=dist --asar --overwrite",
     "test": "react-scripts test",
+    "convert": "csv2json -t data.csv data.json",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

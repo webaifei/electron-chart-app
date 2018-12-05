@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import echarts from "echarts";
 import {Tabs} from "element-react";
 import "./style.css";
+const ipcRenderer = window.require('electron').ipcRenderer;
 export default class PvUv extends Component{
     constructor(props) {
         super(props);
@@ -68,10 +69,16 @@ export default class PvUv extends Component{
             }
         }
     }
+    bindEvent() {
+        // 数据解析成功通知
+        ipcRenderer.on('update-data', ()=> {
+            
+        })
+    }
     componentDidMount() {
         const containerRef = this.refs.container;
         console.log(containerRef);
-        
+        this.bindEvent();   
         const myChart = echarts.init(containerRef);
         myChart.setOption(this.state.applyCardData);
     }
